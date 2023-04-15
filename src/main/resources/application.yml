@@ -17,11 +17,11 @@ openai:
   apiKey: ${OPENAI_API_KEY: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}
 # 知识星球配置
 # https://zsxq.com/
-# zsxq:
-#   cookie: ${ZSXQ_COOKIE:你的星球cookie}
-#   groupId: ${ZSXQ_GROUP_ID:你的星球id}
-#   # 是否提醒提问者
-#   silenced: ${ZSXQ_SILENCED:true}
+zsxq:
+  cookie: ${ZSXQ_COOKIE:zsxq_access_token=B9EC15B5-B0ED-D875-3F04-D76AF122ABEC_FCC090A4D7A23434; abtest_env=product; zsxqsessionid=82ee1f826a741dd8752a5e1cc4caee47; sajssdk_2015_cross_new_user=1; UM_distinctid=18783411ed443c-06e804143ae007-1d525634-1fa400-18783411ed5c50; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%22812525511528482%22%2C%22first_id%22%3A%221878315040d13df-0e5de8e1abf4a2-1d525634-2073600-1878315040e2134%22%2C%22props%22%3A%7B%7D%2C%22%24device_id%22%3A%221878315040d13df-0e5de8e1abf4a2-1d525634-2073600-1878315040e2134%22%2C%22identities%22%3A%22eyIkaWRlbnRpdHlfY29va2llX2lkIjoiMTg3ODM0MTMxYTdjZTEtMDA4NzViNWY5NjVlODhiLTFkNTI1NjM0LTIwNzM2MDAtMTg3ODM0MTMxYTgyNmI0IiwiJGlkZW50aXR5X2xvZ2luX2lkIjoiODEyNTI1NTExNTI4NDgyIn0%3D%22%2C%22history_login_id%22%3A%7B%22name%22%3A%22%24identity_login_id%22%2C%22value%22%3A%22812525511528482%22%7D%7D}
+  groupId: ${ZSXQ_GROUP_ID:2455128121}
+  # 是否提醒提问者
+  silenced: ${ZSXQ_SILENCED:false}
 # 任务配置
 task:
   # 并发
@@ -33,7 +33,7 @@ task:
   # 任务列表，支持配置多个
   list:
     - name: task1 #任务名
-      monitor: default #监控者
+      monitor: zsxq #监控者
       answerer: openai #回答者
       cron: '0/30 * * * * ?' #执行周期
 #    - name: task2
