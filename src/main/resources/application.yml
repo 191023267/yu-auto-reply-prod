@@ -17,11 +17,11 @@ openai:
   apiKey: ${OPENAI_API_KEY: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}
 # 知识星球配置
 # https://zsxq.com/
-zsxq:
-  cookie: ${ZSXQ_COOKIE:你的星球cookie}
-  groupId: ${ZSXQ_GROUP_ID:你的星球id}
-  # 是否提醒提问者
-  silenced: ${ZSXQ_SILENCED:true}
+# zsxq:
+#   cookie: ${ZSXQ_COOKIE:你的星球cookie}
+#   groupId: ${ZSXQ_GROUP_ID:你的星球id}
+#   # 是否提醒提问者
+#   silenced: ${ZSXQ_SILENCED:true}
 # 任务配置
 task:
   # 并发
