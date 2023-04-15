@@ -14,7 +14,7 @@ server:
 # https://platform.openai.com/docs/api-reference
 openai:
   model: ${OPENAI_MODEL:text-davinci-003}
-  apiKey: ${OPENAI_API_KEY:你的apiKey}
+  apiKey: ${OPENAI_API_KEY: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}
 # 知识星球配置
 # https://zsxq.com/
 zsxq:
@@ -33,7 +33,7 @@ task:
   # 任务列表，支持配置多个
   list:
     - name: task1 #任务名
-      monitor: zsxq #监控者
+      monitor: openai #监控者
       answerer: openai #回答者
       cron: '0/30 * * * * ?' #执行周期
 #    - name: task2
