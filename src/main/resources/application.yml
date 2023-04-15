@@ -14,7 +14,7 @@ server:
 # https://platform.openai.com/docs/api-reference
 openai:
   model: ${OPENAI_MODEL:text-davinci-003}
-  apiKey: ${OPENAI_API_KEY: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}
+  apiKey: ${OPENAI_API_KEY:您的key}
 # 知识星球配置
 # https://zsxq.com/
 zsxq:
